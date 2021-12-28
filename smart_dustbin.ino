@@ -15,12 +15,12 @@
  {  
   int value = digitalRead (IRsensor);  
   if (value == 1)  
-   { Serial.print("HIGH-  Opening the lid of bin\n");  
+   {
    myservo.write(90);  
    delay(3000);  
    }  
   else  
-   { Serial.print("LOW-  lid remains close\n");  
+   { 
    myservo.write(0);  
    delay(3000);  
    }  
